@@ -31,13 +31,7 @@ My Curriculum Vitae will be saved with the name:
 ## Texlive installation (if not present)
 I use Texlive and Debian GNU/Linux, so the following steps are based on this OS and Latex compiler.
 
-First of all check if there is a correct Texlive version installed on our system with:
-
-`apt-get --no-install-recommends install texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended`
-
-The `--no-install-recommends` flags avoid the full install of Texlive, with its giant documentation. The previous command, if none of the packages is already installed, will download more or less 100MB of packages (full installation with manuals size is over 1GB).
-
-To check if the Texlive is installed on your system execute this on your command shell:
+To check if Texlive is installed on your system execute this on your command shell:
 
 `pdflatex -v`
 
@@ -56,3 +50,12 @@ Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
 Compiled with libpng 1.6.28; using libpng 1.6.28
 Compiled with zlib 1.2.8; using zlib 1.2.8
 Compiled with poppler version 0.48.0```
+
+If Texlive is not installed or the compilation of the LaTex source failes, try to
+execute the following TexLive installation command:
+
+`apt-get --no-install-recommends install texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended`
+
+The `--no-install-recommends` flag avoid the installation of Texlive giant documentation. The previous command, if none of the packages is already installed, will download more or less 100MB of packages (full installation download size is over 1GB).
+
+After the installation try again to check TexLive version with `pdflatex -v`.
