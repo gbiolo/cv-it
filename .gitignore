@@ -1,0 +1,8 @@
+# Temporary Texlive output files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*_priv.tex
