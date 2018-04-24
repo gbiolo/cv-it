@@ -28,6 +28,20 @@ My Curriculum Vitae will be saved with the name:
 
 `curriculum.pdf`
 
+## Sometimes size matters!!
+The size of the output PDF file created by the Tex compiler usually is greater than a normal PDF file.
+
+To reduce the file file you can use the great Ghostscript, that is installed by default in the major
+Linux distributions (Debian confirmed).
+
+The reduced output file size will be even 90% smaller than the original one.
+
+The syntax is as easy as this:
+
+`gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=curriculum_priv_compressed.pdf curriculum_priv.pdf`
+
+The previous command must be executed inside the directory containing the compiled PDF file.
+
 ## Texlive installation (if not present)
 I use Texlive and Debian GNU/Linux, so the following steps are based on this OS and Latex compiler.
 

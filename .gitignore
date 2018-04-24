@@ -5,5 +5,5 @@
 *.log
 *.out
 *.synctex.gz
-*_priv.tex
-*_priv.pdf
+*priv*
+*priv*
