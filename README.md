@@ -52,7 +52,8 @@ To check if Texlive is installed on your system execute this on your command she
 The output should be something similar to this:
 
 
-`pdfTeX 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian)
+```
+pdfTeX 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian)
 kpathsea version 6.2.2
 Copyright 2016 Han The Thanh (pdfTeX) et al.
 There is NO warranty.  Redistribution of this software is
@@ -63,7 +64,8 @@ named COPYING and the pdfTeX source.
 Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
 Compiled with libpng 1.6.28; using libpng 1.6.28
 Compiled with zlib 1.2.8; using zlib 1.2.8
-Compiled with poppler version 0.48.0`
+Compiled with poppler version 0.48.0
+```
 
 If Texlive is not installed or the compilation of the LaTex source failes, try to
 execute the following TexLive installation command:
