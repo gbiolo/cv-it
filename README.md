@@ -28,6 +28,17 @@ My Curriculum Vitae will be saved with the name:
 
 `curriculum.pdf`
 
+To build the presentation letter
+
+`pdflatex letter.tex`
+
+The letter will be saved as
+
+`letter.pdf`
+
+Warning! The text of my presentation letter is totally unsensed. Use your creativity
+to write your own.
+
 ## Sometimes size matters!!
 The size of the output PDF file created by the Tex compiler usually is greater than a normal PDF file.
 
@@ -38,9 +49,12 @@ The reduced output file size will be even 90% smaller than the original one.
 
 The syntax is as easy as this:
 
-`gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=curriculum_priv_compressed.pdf curriculum_priv.pdf`
+`gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=curriculum_compressed.pdf curriculum.pdf`
 
 The previous command must be executed inside the directory containing the compiled PDF file.
+
+The same command can be used with the presentation letter, just replacing the curriculum vitae
+PDF files with the presentation letter ones.
 
 ## Texlive installation (if not present)
 I use Texlive and Debian GNU/Linux, so the following steps are based on this OS and Latex compiler.
@@ -50,7 +64,6 @@ To check if Texlive is installed on your system execute this on your command she
 `pdflatex -v`
 
 The output should be something similar to this:
-
 
 ```
 pdfTeX 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian)
@@ -70,7 +83,7 @@ Compiled with poppler version 0.48.0
 If Texlive is not installed or the compilation of the LaTex source failes, try to
 execute the following TexLive installation command:
 
-`apt-get --no-install-recommends install texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended`
+`apt-get --no-install-recommends install texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended latexmk cm-super`
 
 The `--no-install-recommends` flag avoid the installation of Texlive giant documentation. The previous command, if none of the packages is already installed, will download more or less 100MB of packages (full installation download size is over 1GB).
 
